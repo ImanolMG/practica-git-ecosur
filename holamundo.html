@@ -16,6 +16,13 @@
 
 <button type="button" id="boton-alert" class="boton-alert">Boton alerta</button>
 
+<div>
+    <button id="mostrar">Mostrar Elemento</button>
+    <button id="ocultar">Ocultar Elemento</button>
+</div>
+<div id="elemento" class="oculto">
+    <p>Este es un elemento que se puede mostrar u ocultar.</p>
+</div>
 
 <script>
    
@@ -28,6 +35,15 @@
         alert("HOLA");
     });
     
+    $("#mostrar").click(function() {
+                $("#elemento").slideDown("slow");
+            });
+
+            // Ocultar elemento con animación
+            $("#ocultar").click(function() {
+                $("#elemento").slideUp("slow");
+            });
+
     });
 
     
