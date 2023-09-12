@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola Mundo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-<h1> Hola mundo</h1>
-
+<h1 class="hola" id="hola" ></h1>
+<button type="button" id="mi-boton" class="mi-boton" > Hola</button>
 <h1> Rama main </h1>
+
 <h1> Rama rama2 </h1>
+
+<script>
+   
+    $(document).ready(function(){
+    $("#mi-boton").click(function(){
+    $("#hola").text("Text");
+    
+    
+    
+    });
+    });
+    
+    
+    </script>
+
 </body>
+
+
+
+
+
+
+
 </html>
